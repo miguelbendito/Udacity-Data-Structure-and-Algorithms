@@ -1,0 +1,9 @@
+Hello, I wanted to add this note in order to expose some questions regarding the previous mentor's review:
+	In problem 6 the mentor suggests to modify the for loop to 
+		"range(len(ints))/range(0,len(ints))"
+	However when I try that code it didn't work because "range" doesn't support '/'
+
+
+	Also in problem 5 I have problems with my suffix method. I am returning all the data in the array and not only those that match the input (prefix)
+
+	In problem 3 I changed my implementation of merge sort to counting sort. This way I performance from O(nlogn) to O(n) with this algorithm.

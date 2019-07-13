@@ -1,0 +1,36 @@
+Problem 1:
+For this problem we needed to find the square root of a number. If the number did not have a integer as a sqrt then we return the
+floor. I decided to use an in place algorithm, binary search is perfect for this. It is O(logn) for time complexity. Where n is
+the number integers less than the Number. Space complexity is O(1) because we are not holding any data
+
+Problem 2:
+This problem gives us a rotated sorted array. The key of this problem is to use an algorithm like binary search. Select a pivot in the array.
+If the pivot is greater then check the right half or check the left one otherwise. The time complexity of this problem is O(logn) where n is
+size of the array. The space complexity is O(1) because is an in place algorithm and we did not need to allocate extra data
+
+Problem 3:
+For this problem we needed to find the max and min sum of an array. The easiest way to do this was sorting the array in descending order. Use the even and odd
+indexes to form the sums. For this problem I decided to use merge sort. The time complexity of this algorithm is O(n)
+which is the average worst case for counting sort. The space complexity of this algorithm is O(n) because we are creating 2 new arrays, one to count the values
+and one to store the answer
+
+Problem 4:
+For this problem I used the solution given to us the sorting sections. The time complexity is O(n) because we have to traverse the entire array
+The space complexity is O(1) because we are doing in place sorting
+
+Problem 5:
+In this problem I had to implement a trieNode class and a trie class. Very similar to a tree. In order to insert a node, find if it exist or search for suffixes,
+we need to traverse the tree which has a particular structure. In the worst case scenario every node has 26 branches for every other letter in the abc.
+The time complexity for this algorithm is O(n) because even though we are using a dictionary which has a the return time of a constant, we still need to traverse
+the whole tree. The space complexity is O(kn) where k is the depth of the tree and n the number of letters
+
+Problem 6:
+For this problem we need to find the min and max element in an array. If we use 2 variables to iterate through the array then we do not need
+to traverse the array multiple times; just one time. The time complexity of this problem is O(n) because we must search through the entire array.
+The space complexity is O(1) because we are not using extra data in the function.
+
+Problem 7:
+Using a trieNode and Trie class we are implementing a Router class. The router class inserts a path and a handler to the trie class. The trie class
+handles the handler and inserts every part of the path into the trieNode class.
+The time complexity of this algorithm is O(n) because we need to traverse the whole tree. The space complexity is O(nk) where k is the depth of the tree
+and n is the number of letters in the Node class.
