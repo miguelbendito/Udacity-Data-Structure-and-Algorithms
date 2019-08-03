@@ -1,0 +1,32 @@
+Task 0: 
+Run time analysis of worst case Big o is O(n)
+
+	Looking for an specific index takes constant time in other word O(1)
+	Import of both lists takes O(n) for each list 
+
+Task 1:
+Run time analysis of worst case Big o is O(n)
+
+	Import of both lists takes O(n) for each list 
+	Looping through both lists takes O(n) for each
+
+Task 2:
+Run time analysis of worst case Big o is O(n)
+
+	Import of both lists takes O(n) for each list
+	Building the dictionary takes O(n)
+	Iterating through the dictionary takes O(n)
+
+Task 3:
+Run time analysis of worst case Big o is O(nlog_n)
+
+	Import of both lists takes O(n) for each list
+	Looping through both list and set takes O(n) for each
+	in code sort takes O(nlog_n)
+	
+Task 4:
+Run time analysis of worst case Big o is O(nlogn)
+
+	Import of both lists takes O(n) for each list
+	Looping through 4 sets takes O(n) for each
+	in code sort takes O(nlog_2n)
