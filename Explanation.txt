@@ -1,0 +1,34 @@
+Problem_1:
+	There are 2 data structures:
+	Queue: where the size of the queue will be the size of the cache, and the recently used pages will be at the front and the least recent ones will be at the rear end of the queue.
+	Hashmap/dictionary: contains the page number as the key and the entry as the value
+	******The time complexity of this algorithm is O(1) because we can access any value in the dictionary if we have the key
+  ******The space complexity of LRU is O(n) where n is the capacity of the LRU.
+
+Problem_2:
+	This problem requires to analyze the given path until we reach the end of it.
+	If the path refers to a directory then call the function again, if the path is a file then we compare it to the given suffix
+	*******The time complexity is O(n) because you have to do a for loop to traverse the path's directories and subdirectories
+	*******The space complexity is O(n) because it depends on the depth of the path.
+
+Problem_3:
+	We need to create a Huffman tree with the given characters. Depending on the frequency of the character we assign a path to the character in the tree. Most frequent characters take less time to reach than less frequent ones.
+  *******The time complexity of Huffman Coding is O(nlogn). O(logn) to build the weight tree. O(n) to iterate through the tree
+	*******The space complexity of these code is O(3n) because of the list and the 2 dictionaries
+
+Problem_4:
+	If we notice the structure of the group class we can notice its a DFS tree. So we must traverse the graph looking if the user belongs to a group in the graph. We use recursion to call the is_user_in_group every time we move to the side or down in the tree. If the group contains elements in the user's list then compare them to the given user.
+  *******The time complexity for this method is O(n) becuase of the for loop.
+	*******The space complexity is O(n) where n is the size of the path.
+Problem_5:
+	We are mandated to use an implementation of Linkedlists to solve this problem. The only difference is that we do not need to have a remove method in this class.
+	Every block is connected by its previous hash and the current hash contains encrypted information about that block.
+	*******The time complexity for this implementation is O(n) for traversing and printing all the transactions. O(1) for inserting a block in the block chain
+	*******The space complexity is O(n) where n is the number block nodes in the linkedlist
+Problem_6:
+	We need to add more methods to our linked list implementation like: duplicate which recreates a copy of the given linked list, insert_at_end which adds a new node to the end of the list, get_prev_node.
+	Also we need to add one more auxiliary function, remove_duplicates, which compares the values of the list, if the of the current node in the first while loop is the same as the temp node in the second while loop then we remove the node in that location.
+	Union updates the end of the linked list from none to head of the second list.
+	Interception compares the values of both lists, if they match then they are added to a new list
+	*******The time complexity for this implementation is O(n^2) because of the nested loops
+	*******The space complexity for the linkedlist is O(n) where n is the number of items in the linkedlists
